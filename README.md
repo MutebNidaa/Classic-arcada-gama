@@ -5,6 +5,7 @@ frontend-nanodegree-arcade-game
 
 This game is my project for the Udacity Front-End Web nanodegree 
 is create a classic arcade game using javaScript and HTML Canvas
+Download the game from github and Open browser window index.html or play live [here](https://famished-freeze.000webhostapp.com/Classic%20Arcade%20Game%20Clone/p6/index.html)
 
 ##Play
 
