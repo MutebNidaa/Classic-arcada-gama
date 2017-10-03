@@ -1,5 +1,6 @@
 // Enemies our player must avoid
 var Enemy = function(x, y, speed) {
+    'use strict';
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
     
@@ -30,7 +31,7 @@ Enemy.prototype.update = function(dt) {
     // Collision 
     if (player.x < this.x + 50 &&
         player.x + 30 > this.x &&
-        player.y < this.y + 20 &
+        player.y < this.y + 20 &&
         player.y + 25 > this.y) {
         player.x = 200;
         player.y = 400;
@@ -60,6 +61,9 @@ Player.prototype.update = function() {
     }
     if (this.x > 400) {
         this.x = 400;
+    }
+    if (this.x < 0) {
+         this.x = 0;
     }
     if (this.y < 0) {
         this.x = 200;
